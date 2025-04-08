@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka dávkování z pera</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <h1>🧪 Kalkulačka dávkování z pera 🧪</h1>
+
+    <div class="calculator">
+        <div class="form-group">
+            <label for="penSelect">1. Vyber typ pera které máš (mg):</label>
+            <select id="penSelect">
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="doseSelect">2. Vyber požadovanou dávku (mg):</label>
+            <select id="doseSelect">
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label>3. Jaký typ inzulinové stříkačky máš?</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="syringeType" value="U100" checked> U100 <span class="syringe-desc">(1ml = 100 dílků)</span>
+                </label>
+                <label>
+                    <input type="radio" name="syringeType" value="U40">
+                    U40 <span class="syringe-desc">(1ml = 40 dílků)</span>
+                </label>
+                <label>
+                    <input type="radio" name="syringeType" value="other">
+                    Jinou / Nechci počítat dílky
+                </label>
+            </div>
+        </div>
+        <button id="calculateBtn">Vypočítat objem / dílky</button>
+
+        <div id="result">
+            Vyberte hodnoty a klikněte na tlačítko.
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <h2>⚠️ DŮLEŽITÉ UPOZORNĚNÍ:</h2>
+        <p>Tento nástroj je pouze orientační pomůcka vytvořená na základě poskytnuté tabulky.</p>
+        <p><strong>NEJEDNÁ SE O LÉKAŘSKOU RADU.</strong></p>
+        <p>Výpočet dílků na stříkačce je teoretický. Vždy vizuálně zkontrolujte natažený objem na stupnici stříkačky (ml).</p>
+        <p>Vždy se striktně řiďte pokyny svého ošetřujícího lékaře, lékárníka nebo informacemi v příbalovém letáku léku.</p>
+        <p>Před aplikací jakékoli dávky si pečlivě zkontrolujte typ pera, koncentraci a vypočtený objem.</p>
+        <p>Za správnost dávkování zodpovídá výhradně aplikující osoba.</p>
+        <p>V případě jakýchkoli pochybností nebo nejasností kontaktujte svého lékaře nebo lékárníka.</p>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
